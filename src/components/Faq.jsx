@@ -25,17 +25,17 @@ export default function Faq() {
     },
     {
       question: "Comment puis-je contacter le service client en cas de problème?",
-      answer: "En cas de problème, contactez-nous par téléphone au +237 6 595 87 01 15 ou par email info@wegomobility.fr. Notre équipe est disponible 24h/24 et 7j/7."
+      answer: "En cas de problème, contactez-nous par téléphone au +237 6 595 87 01 15 ou par email infos@wegomobility.fr . Notre équipe est disponible 24h/24 et 7j/7."
     }
   ]
 
   return (
-    <div className="bg-gray-50 py-20">
+    <div className="bg-[#000] py-20 px-10 mt-10">
       <div className="container mx-auto px-4">
         <motion.h1 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-5xl font-bold text-center mb-12"
+          className="text-5xl font-bold text-center mb-12 text-white"
         >
           Foire aux questions
         </motion.h1>

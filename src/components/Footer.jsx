@@ -143,7 +143,7 @@ export default function Footer() {
                 <svg className="w-5 h-5 mr-3 mt-0.5 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <a href="mailto:contact@sgroup.com" className="hover:text-[#FFFFFF] transition-colors">contact@sgroup.com</a>
+                <a href="mailto:contact@sgroup.com" className="hover:text-[#FFFFFF] transition-colors">infos@wegomobility.fr</a>
               </div>
               <div className="flex items-start">
                 <svg className="w-5 h-5 mr-3 mt-0.5 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -177,7 +177,7 @@ export default function Footer() {
         {/* Mentions légales */}
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
-            <p>© {new Date().getFullYear()} S'Group. Tous droits réservés.</p>
+            <p>© {new Date().getFullYear()}  WeGo mobility. Tous droits réservés.</p>
             <div className="flex gap-4 mt-4 md:mt-0">
               <a href="#" className="hover:text-[#FFFFFF] transition-colors">Mentions légales</a>
               <a href="#" className="hover:text-[#FFFFFF] transition-colors">Politique de confidentialité</a>

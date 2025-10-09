@@ -136,13 +136,17 @@ const About = () => {
                 Télécharger l'application
               </motion.button>
               
-              <motion.button
-                whileHover={{ scale: 1.05, backgroundColor: "#f3f4f6" }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-white text-black px-8 py-4 rounded-lg font-bold text-lg border-2 border-gray-300 hover:border-primary transition-colors"
-              >
-                En savoir plus
-              </motion.button>
+            <motion.a
+  href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  whileHover={{ scale: 1.05, backgroundColor: "#f3f4f6" }}
+  whileTap={{ scale: 0.95 }}
+  className="bg-white text-black px-8 py-4 rounded-lg font-bold text-lg border-2 border-gray-300 hover:border-primary transition-colors inline-block"
+>
+  En savoir plus
+</motion.a>
+
             </motion.div>
 
             {/* Stats */}

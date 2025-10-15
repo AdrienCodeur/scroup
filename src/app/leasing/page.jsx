@@ -180,7 +180,9 @@ export default function Leasing() {
                   Devenir chauffeur WeGo
                 </motion.button>
                 
-                <motion.button
+                <motion.a
+  href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}`}
+  target='blank'
                   whileHover={{ 
                     scale: 1.05,
                     backgroundColor: "#ffffff",
@@ -190,7 +192,7 @@ export default function Leasing() {
                   className="bg-gray-800 text-white px-8 py-4 rounded-lg font-bold text-lg border border-gray-600 hover:bg-white hover:text-black transition-colors"
                 >
                   Contacter un conseiller
-                </motion.button>
+                </motion.a>
               </motion.div>
             </motion.div>
 
@@ -299,11 +301,11 @@ export default function Leasing() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2 }}
                 whileHover={{ y: -10 }}
-                className="bg-gray-50 p-6 rounded-lg text-center hover:shadow-xl transition-all"
+                className="bg-grayy-50 bg-black p-6 rounded-lg text-center hover:shadow-xl transition-all"
               >
                 <div className="text-4xl mb-4">{avantage.icon}</div>
-                <h4 className="text-xl font-bold mb-2">{avantage.title}</h4>
-                <p className="text-gray-600">{avantage.description}</p>
+                <h4 className="text-xl font-bold mb-2 text-white">{avantage.title}</h4>
+                <p className="text-gray-600 text-white">{avantage.description}</p>
               </motion.div>
             ))}
           </div>

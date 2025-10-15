@@ -112,7 +112,7 @@ const Services = () => {
   }
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-20 bg-gradientt-to-b fromm-white to-gray-50  bg-black">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -124,7 +124,7 @@ const Services = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-5xl font-bold bg-gradient-to-r from-black to-gray-700 bg-clip-text text-transparent mb-4"
+            className="text-5xl font-bold bg-gradient-to-r from-black to-gray-700 bg-clip-text text-transparent mb-4 text-white"
           >
             Nos services
           </motion.h2>
@@ -132,7 +132,7 @@ const Services = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-xl text-gray-600 max-w-3xl mx-auto"
+            className="text-xl text-grayu-600 text-white max-w-3xl mx-auto"
           >
             Découvrez nos solutions de mobilité complètes adaptées à tous vos besoins
           </motion.p>
@@ -249,10 +249,10 @@ const Services = () => {
             transition={{ type: "spring", stiffness: 100 }}
             className="bg-gradient-to-r from-primary to-black p-8 rounded-2xl shadow-lg"
           >
-            <h3 className="text-2xl font-bold text-black mb-4">
+            <h3 className="text-2xl font-bold text-black mb-4 text-white">
               Prêt à essayer WeGo ?
             </h3>
-            <p className="text-gray-800 mb-6">
+            <p className="text-gray-800 mb-6 text-white">
               Téléchargez l'application et bénéficiez de 20% de réduction sur votre première course !
             </p>
             <motion.button
@@ -261,7 +261,7 @@ const Services = () => {
                 boxShadow: "0 10px 30px rgba(3, 3, 0, 0.3)"
               }}
               whileTap={{ scale: 0.95 }}
-              className="bg-black text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-gray-800 transition-colors"
+              className="bg-white text-black px-8 py-3 rounded-lg font-bold text-lg hover:bg-gray-800 transition-colors"
             >
               Télécharger l'App
             </motion.button>

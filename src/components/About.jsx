@@ -95,7 +95,7 @@ const About = () => {
               viewport={{ once: true }}
               className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-black to-gray-700 bg-clip-text text-transparent mb-6"
             >
-              Bienvenue sur <span className="text-primary">WeGo</span>
+              {/* Bienvenue sur <span className="text-primary">WeGo</span> */}
             </motion.h2>
             
             <motion.div
@@ -104,10 +104,10 @@ const About = () => {
               transition={{ delay: 0.2 }}
               className="space-y-6 text-lg text-gray-700 leading-relaxed"
             >
-              <p>
+              {/* <p>
                 <strong>WeGo</strong> est une solution de mobilité et logistique pensée pour simplifier 
                 vos déplacements et vos livraisons à prix bas tout en respectant l'environnement.
-              </p>
+              </p> */}
               
               <p>
                 Avec notre réseau de <strong>moto-taxis rapides et sécurisés</strong>, nos services de 
@@ -254,11 +254,11 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2 }}
                 whileHover={{ y: -10 }}
-                className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all"
+                className="bg-black p-6 rounded-lg shadow-lg hover:shadow-xl transition-all"
               >
                 <div className="text-4xl mb-4">{value.icon}</div>
-                <h4 className="text-xl font-bold mb-2">{value.title}</h4>
-                <p className="text-gray-600">{value.desc}</p>
+                <h4 className="text-xl font-bold mb-2 text-white">{value.title}</h4>
+                <p className="text-gray-600 text-white">{value.desc}</p>
               </motion.div>
             ))}
           </div>

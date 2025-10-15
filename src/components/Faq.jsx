@@ -30,7 +30,7 @@ export default function Faq() {
   ]
 
   return (
-    <div className="bg-[#000] py-20 px-10 mt-10">
+    <div className="bg-[#000] py-20 px-10 mt-20">
       <div className="container mx-auto px-4">
         <motion.h1 
           initial={{ opacity: 0, y: 30 }}

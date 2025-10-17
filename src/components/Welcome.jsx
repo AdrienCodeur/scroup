@@ -1,6 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import About from './About'
 
 const Welcome = () => {

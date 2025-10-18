@@ -33,16 +33,16 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-2">
         <div className="flex justify-between items-center">
           {/* Logo - Taille augmentée */}
-     <a href="/" className="cursor-pointer flex items-center">
-  <div className="relative w-[160px] h-[150px]">
-    <Image 
-      src="/logo.png"
-      alt="Logo"
-      fill
-      style={{ objectFit: 'contain' }}
-    />
-        </div>
-      </a>
+          <a href="/" className="cursor-pointer flex items-center">
+            <div className="relative w-[160px] h-[150px]">
+              <Image 
+                src="/logo.png"
+                alt="Logo"
+                fill
+                style={{ objectFit: 'contain' }}
+              />
+            </div>
+          </a>
 
           {/* Menu Desktop */}
           <div className="hidden md:flex space-x-8">
@@ -121,9 +121,9 @@ const Header = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden mt-4"
+              className="md:hidden mt-4 bg-[#111] rounded-xl shadow-lg border border-gray-800 overflow-hidden"
             >
-              <div className="flex flex-col space-y-2">
+              <div className="flex flex-col space-y-2 py-4 px-2">
                 {menuItems.map((item) => {
                   const active = isActive(item.href)
                   return (
@@ -131,7 +131,9 @@ const Header = () => {
                       key={item.href}
                       href={item.href}
                       className={`relative font-medium py-3 px-4 ${
-                        active ? 'text-white bg-gray-800' : 'text-gray-300 hover:text-white hover:bg-gray-800'
+                        active
+                          ? 'text-white bg-gray-800'
+                          : 'text-gray-300 hover:text-white hover:bg-gray-800'
                       } rounded-lg transition-all`}
                       onClick={() => setIsMenuOpen(false)}
                     >

@@ -119,42 +119,88 @@ export default function Navbar() {
       </div>
 
       {/* Menu Mobile */}
-      <motion.div
-        initial={false}
-        animate={isOpen ? 'open' : 'closed'}
-        variants={{
-          open: { opacity: 1, height: 'auto' },
-          closed: { opacity: 0, height: 0 }
-        }}
-        transition={{ duration: 0.3 }}
-        className="md:hidden bg-black/95 backdrop-blur-md overflow-hidden"
-      >
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          {navLinks.map((link) => (
-            <div key={link.name}>
-              <a
-                href={link.href}
-                className={`block px-3 py-2 rounded-md text-base font-medium ${pathname === link.href ? 'bg-gray-900 text-[#0066FF]' : 'text-white hover:bg-gray-800'}`}
+{/* Menu Mobile */}
+<motion.div
+  initial={false}
+  animate={isOpen ? 'open' : 'closed'}
+  variants={{
+    open: { opacity: 1, height: 'auto' },
+    closed: { opacity: 0, height: 0 }
+  }}
+  transition={{ duration: 0.3 }}
+  className="md:hidden bg-black/95 backdrop-blur-md overflow-hidden border-t border-gray-700"
+>
+  <div className="px-4 pt-4 pb-6 space-y-3">
+    {navLinks.map((link) => (
+      <div key={link.name} className="border-b border-gray-700/50 pb-2 last:border-b-0">
+        <a
+          href={link.href}
+          className={`block px-4 py-4 rounded-lg text-lg font-semibold transition-all duration-200 ${
+            pathname === link.href 
+              ? 'bg-blue-600 text-white shadow-lg' 
+              : 'text-white hover:bg-gray-800/70 hover:scale-105'
+          }`}
+          style={{
+            fontSize: '1.125rem',
+            lineHeight: '1.75rem'
+          }}
+        >
+          <div className="flex items-center justify-between">
+            <span>{link.name}</span>
+            {link.subLinks && (
+              <motion.svg
+                animate={{ rotate: isOpen ? 180 : 0 }}
+                className="h-5 w-5 text-gray-300"
+                fill="none" 
+                viewBox="0 0 24 24" 
+                stroke="currentColor"
               >
-                {link.name}
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </motion.svg>
+            )}
+          </div>
+        </a>
+        
+        {/* Sous-menu mobile */}
+        {link.subLinks && isOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            transition={{ duration: 0.2 }}
+            className="pl-4 space-y-2 mt-2 ml-2 border-l-2 border-blue-500/30"
+          >
+            {link.subLinks.map((subLink) => (
+              <a
+                key={subLink.name}
+                href={subLink.href}
+                className="block px-4 py-3 rounded-lg text-base font-medium bg-gray-800/50 text-gray-100 hover:bg-gray-700/70 hover:text-white transition-all duration-200 hover:translate-x-1"
+                style={{
+                  fontSize: '1rem',
+                  lineHeight: '1.5rem'
+                }}
+              >
+                {subLink.name}
               </a>
-              {link.subLinks && isOpen && (
-                <div className="pl-4 space-y-1 mt-1">
-                  {link.subLinks.map((subLink) => (
-                    <a
-                      key={subLink.name}
-                      href={subLink.href}
-                      className="block px-3 py-2 rounded-md text-sm text-gray-300 hover:bg-gray-800"
-                    >
-                      {subLink.name}
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-      </motion.div>
+            ))}
+          </motion.div>
+        )}
+      </div>
+    ))}
+  </div>
+
+  {/* Section contact rapide en mobile */}
+  <div className="px-4 pb-4 pt-2 border-t border-gray-700">
+    <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-lg p-4">
+      <p className="text-white text-sm font-medium mb-2">📞 Besoin d'aide ?</p>
+      <a 
+        href="/contact" 
+        className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-base"
+      >
+        Nous contacter
+      </a>
+    </div>
+  </div>
+</motion.div>
     </motion.header>
   );
 }

@@ -95,7 +95,7 @@ const About = () => {
               viewport={{ once: true }}
               className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-black to-gray-700 bg-clip-text text-transparent mb-6"
             >
-              {/* Bienvenue sur <span className="text-primary">WeGo</span> */}
+                Notre vision 
             </motion.h2>
             
             <motion.div
@@ -104,10 +104,11 @@ const About = () => {
               transition={{ delay: 0.2 }}
               className="space-y-6 text-lg text-gray-700 leading-relaxed"
             >
-              {/* <p>
-                <strong>WeGo</strong> est une solution de mobilité et logistique pensée pour simplifier 
-                vos déplacements et vos livraisons à prix bas tout en respectant l'environnement.
-              </p> */}
+              <p>
+                  Notre vision : <strong>améliorer la mobilité urbaine</strong> tout en réduisant 
+                le coût de transport et l'empreinte carbone grâce à des solutions innovantes 
+                et accessibles à tous.
+              </p>
               
               <p>
                 Avec notre réseau de <strong>moto-taxis rapides et sécurisés</strong>, nos services de 
@@ -116,25 +117,25 @@ const About = () => {
                 moderne, pratique et durable pour répondre à tous vos besoins quotidiens.
               </p>
 
-              <p>
+              {/* <p>
                 Notre vision : <strong>améliorer la mobilité urbaine</strong> tout en réduisant 
                 le coût de transport et l'empreinte carbone grâce à des solutions innovantes 
                 et accessibles à tous.
-              </p>
+              </p> */}
             </motion.div>
 
             <motion.div
               variants={buttonVariants}
               className="mt-8 flex flex-col sm:flex-row gap-4"
             >
-              <motion.button
+              {/* <motion.button
                 variants={buttonVariants}
                 whileHover="hover"
                 whileTap="tap"
                 className="bg-black text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-800 transition-colors shadow-lg"
               >
                 Télécharger l'application
-              </motion.button>
+              </motion.button> */}
               
             <motion.a
   href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}`}
@@ -159,7 +160,7 @@ const About = () => {
               <div className="text-center">
                 <motion.div
                   whileHover={{ scale: 1.1 }}
-                  className="text-3xl font-bold text-primary mb-2"
+                  className="text-3xl font-bold text-black mb-2"
                 >
                   10K+
                 </motion.div>
@@ -169,7 +170,7 @@ const About = () => {
               <div className="text-center">
                 <motion.div
                   whileHover={{ scale: 1.1 }}
-                  className="text-3xl font-bold text-primary mb-2"
+                  className="text-3xl font-bold text-black mb-2"
                 >
                   500+
                 </motion.div>
@@ -179,7 +180,7 @@ const About = () => {
               <div className="text-center">
                 <motion.div
                   whileHover={{ scale: 1.1 }}
-                  className="text-3xl font-bold text-primary mb-2"
+                  className="text-3xl font-bold text-black mb-2"
                 >
                   24/7
                 </motion.div>
@@ -241,7 +242,7 @@ const About = () => {
           viewport={{ once: true }}
           className="mt-20 text-center"
         >
-          <h3 className="text-3xl font-bold mb-8">Nos valeurs</h3>
+          <h3 className="text-3xl font-bold mb-8 text-black">Nos valeurs</h3>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { icon: "⚡", title: "Rapidité", desc: "Service ultra-rapide et efficace" },

@@ -237,7 +237,7 @@ const Services = () => {
         </motion.div>
 
         {/* Call to Action */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -266,7 +266,7 @@ const Services = () => {
               Télécharger l'App
             </motion.button>
           </motion.div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   )

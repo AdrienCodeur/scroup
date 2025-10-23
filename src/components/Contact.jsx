@@ -207,26 +207,26 @@ export default function Contact() {
               className="space-y-6"
             >
               {/* Carte Maps */}
-              <div className="bg-[#000] rounded-lg shadow-lg overflow-hidden">
-                <div className="h-64 bg-gray-200 relative">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.5000000000005!2d11.50000000000001!3d3.5000000000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMzAnMDAuMCJOIDExwrMwMCcwMC4wIkU!5e0!3m2!1sfr!2scm!4v1234567890"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Localisation WeGo"
-                    className="absolute inset-0"
-                  />
-                  
-                  <div className="absolute bottom-4 left-4 bg-black/80 text-white p-3 rounded-lg">
-                    <h4 className="font-bold">WeGo Headquarters</h4>
-                    <p className="text-sm">Yaoundé, Cameroun</p>
-                  </div>
-                </div>
-              </div>
+          <div className="bg-[#000] rounded-lg shadow-lg overflow-hidden">
+  <div className="h-64 bg-gray-200 relative">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.7159999999997!2d9.704583!3d4.048538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwMDInNTQuNyJOIDnCsDQyJzE2LjUiRQ!5e0!3m2!1sfr!2scm!4v1234567890"
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Localisation WeGo"
+      className="absolute inset-0"
+    />
+    
+    <div className="absolute bottom-4 left-4 bg-black/80 text-white p-3 rounded-lg">
+      <h4 className="font-bold">WeGo Headquarters</h4>
+      <p className="text-sm">Rue Léman Akwa Douala</p>
+    </div>
+  </div>
+</div>
 
               {/* Réseaux sociaux */}
               <motion.div

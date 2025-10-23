@@ -15,6 +15,19 @@ const Services = () => {
       ],
       description: 'Rapide, sûr et économique : vos déplacements n\'ont jamais été aussi simples !'
     },
+
+     {
+      title: 'WeGo Food',
+      image: '/wegofood.jpg',
+      features: [
+        'Commande rapide depuis votre téléphone',
+        'Paiement sécurisé et tarif fixe',
+        '⁠Livraison rapide',
+        'Suivi en temps réel de votre commande' ,
+        '⁠Notation du chauffeur et du restaurant'
+      ],
+      description: 'Commandez,  et faites-vous livrer vos repas en toute simplicité et rapidité.!'
+    },
     {
       title: 'WeGo Livraison',
       image: '/livraison.jpeg',
@@ -143,7 +156,7 @@ const Services = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
-          className="grid md:grid-cols-3 gap-8 lg:gap-12"
+          className="grid md:grid-cols-3 gap-8 lg:gap-6"
         >
           {services.map((service, index) => (
             <motion.div

@@ -1,7 +1,7 @@
 "use client"
-import FilialesPage from '@/components/FilialesPage';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
+import FilialesPage from '../../components/FilialesPage';
+// import { motion } from 'framer-motion';
+// import Image from 'next/image';
 
 const filiales = [
   {

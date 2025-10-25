@@ -180,7 +180,7 @@ export default function Footer() {
             <p>© {new Date().getFullYear()}  WeGo mobility. Tous droits réservés.</p>
             <div className="flex gap-4 mt-4 md:mt-0">
               <a href="#" className="hover:text-[#FFFFFF] transition-colors">Mentions légales</a>
-              <a href="#" className="hover:text-[#FFFFFF] transition-colors">Politique de confidentialité</a>
+              <a href="/privacy-policy" className="hover:text-[#FFFFFF] transition-colors">Politique de confidentialité</a>
             </div>
           </div>
         </div>
